@@ -73,10 +73,6 @@ set hlsearch
 " 24bit colors
 set termguicolors
 
-" git grep command
-nnoremap <C-F> :Ggr <cword><CR>
-command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
-
 set colorcolumn=80
 
 " Ctrl+j as Esc
@@ -125,7 +121,5 @@ inoremap <right> <nop>
 " Left and right can switch buffers
 nnoremap <left> :bp<CR>
 nnoremap <right> :bn<CR>
-
-set spell
 
 let g:airline_powerline_fonts = 1
